@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 <body>
     <div class="root">
@@ -77,14 +77,14 @@
         </div>
 
     </div>
-    <script src="js/API.js"></script>
-    <script src="js/card.js"></script>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+    <!--<script src="js/card.js"></script>
     <script src="js/cardList.js"></script>
     <script src="js/formValidator.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/showPicture.js"></script>
     <script src="js/userInfo.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>-->
 
 </body>
 </html>
