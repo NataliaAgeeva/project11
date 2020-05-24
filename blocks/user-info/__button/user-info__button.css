@@ -1,0 +1,20 @@
+@import url(./_place/user-info__button_place.css);
+
+.user-info__button {
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .user-info__button {
+    position: static;
+    margin-bottom: 40px;
+  }
+}
+
+.user-info__button:hover {
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+}

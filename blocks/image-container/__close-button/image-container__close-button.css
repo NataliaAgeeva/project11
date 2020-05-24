@@ -1,0 +1,6 @@
+.image-container__close-button {
+    width: 26px;
+    cursor: pointer;
+    position: relative;
+    top: -500px;
+}
