@@ -15,10 +15,20 @@ module.exports = {
             use: { loader: "babel-loader" },
             exclude: /node_modules/
         },
-            {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
-            }
+         {
+             test: /\.css$/,
+             use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+         },
+         {
+             test: /\.(png|jpg|gif|ico|svg)$/,
+             use: [
+                 'file-loader?name=./images/[name].[ext]',
+                 {
+                     loader: 'image-webpack-loader',
+                     options: {}
+                 },
+             ]
+         }
         ]
     },
     plugins: [
