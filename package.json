@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/NataliaAgeeva/project11/issues"
   },
-  "homepage": "https://github.com/NataliaAgeeva/project11#readme",
+  "homepage": "https://github.com/NataliaAgeeva/project11",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
