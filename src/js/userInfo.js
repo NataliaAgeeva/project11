@@ -1,4 +1,4 @@
-class UserInfo {
+export default class UserInfo {
     constructor(form, api, popupClass) {
         this.formObj = form;
         this.api = api;
@@ -9,7 +9,7 @@ class UserInfo {
     }
 
     renderData() {
-        //загрузка данных во время загрузки страницы
+        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
         this.api.getUserInfo()
             .then(res => {
@@ -26,7 +26,7 @@ class UserInfo {
     }
 
     setUserInfo() {
-        //обновление данных на сервере
+        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
         this.api.patchUserInfo(this.formObj)
             .then((res) => {
@@ -45,7 +45,7 @@ class UserInfo {
     }
 
     updateUserInfo() {
-        //отрисовка в DOM
+        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ DOM
 
         const editName = document.querySelector('.user-info__name');
         const editInfo = document.querySelector('.user-info__job');
