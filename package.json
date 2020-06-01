@@ -2,7 +2,7 @@
   "name": "project11",
   "homepage": "https://nataliaageeva.github.io/project11",
   "version": "1.0.0",
-  "description": "",
+  "description": "Yandex praktikum project: Webpack settings",
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/NataliaAgeeva/project11.git"
   },
-  "author": "",
+  "author": "Natalia Ageeva",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NataliaAgeeva/project11/issues"
