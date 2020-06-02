@@ -1,4 +1,4 @@
-﻿class Api {
+﻿export default class Api {
   constructor(options) {
     this.options = options;
   }
@@ -95,25 +95,4 @@
                 return Promise.reject(new Error(err.message));
             });
     }
-
-    deleteCard(cardID) {
-
-        return fetch(`${this.options.url}cards/${cardID}`, {
-            method: 'GET',
-            headers: {
-                authorization: this.options.token,
-                'Content-Type': this.options.header
-            }
-        })
-            .then(res => {
-                if (res.ok) {
-                    return res.json();
-                } else {
-                    return Promise.reject(new Error(res.status));
-                }
-            })
-            .catch((err) => {
-                return Promise.reject(new Error(err.message));
-            });
-    }
-    }
+}

@@ -1,4 +1,4 @@
-class FormValidator {
+export default class FormValidator {
     constructor(form) {
         this.form = form;
     }
@@ -20,21 +20,21 @@ class FormValidator {
         const NO_SYMBOLS = '';
 
         if (element.value === NO_SYMBOLS) {
-            errorElement.textContent = 'Это обязательное поле';
+            errorElement.textContent = 'пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ';
             this.activateError(errorElement);
             return false;
         }
 
         if (element.id !== 'link') {
             if (element.value.length < MIN_LENGTH || element.value.length > MAX_LENGTH) {
-                errorElement.textContent = 'Должно быть от 2 до 30 символов';
+                errorElement.textContent = 'пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ 2 пїЅпїЅ 30 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
                 this.activateError(errorElement);
                 return false;
             }
         }
 
         if ((element.id === 'link') && element.validity.typeMismatch) {
-            errorElement.textContent = 'Здесь должна быть ссылка';
+            errorElement.textContent = 'пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ';
             this.activateError(errorElement);
             return false;
         }

@@ -1,4 +1,4 @@
-class ShowPicture {
+export default class ShowPicture {
     constructor() {
     }
 

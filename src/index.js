@@ -1,7 +1,18 @@
+//импорт данных
+import Api from './js/API.js';
+import Card from './js/card.js';
+import CardList from './js/cardList.js';
+import FormValidator from './js/formValidator.js';
+import Popup from './js/popup.js';
+import ShowPicture from './js/showPicture.js';
+import UserInfo from './js/userInfo.js';
+import './pages/index.css';
 //объявление переменных
 
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/' : 'https://praktikum.tk/';
+
 const api = new Api({
-  url: 'https://praktikum.tk/cohort10/',
+  url: `${serverUrl}cohort10/`,
   token: '07b7bffe-e07f-4b18-83ed-c2ba51646289',
   header: 'application/json'
 });

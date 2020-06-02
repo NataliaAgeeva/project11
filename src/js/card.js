@@ -1,5 +1,4 @@
-
-class Card {
+export default class Card {
     constructor(api) {
         this.element = document.createElement('div');
         this.like = this.like.bind(this);
@@ -37,21 +36,10 @@ class Card {
         return this.element;
     }
 
-    displayTrash() {
-        this.api.deleteCard(this.element)
-            .then(() => {
-                console.log(this.element);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }
-
     setEventListeners() {
         this.element.querySelector('.place-card__like-icon').addEventListener('click', this.like);
         this.element.querySelector('.place-card__delete-icon').addEventListener('click', (event) => {
-            
-            this.displayTrash();
+
             this.remove();
         });
     }
